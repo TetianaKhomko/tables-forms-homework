@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Form</title>
+</head>
+<body>
+    <div>
+ <h1>Order a site in our company</h1>
+ <h3>Fill these fields</h3>
+ <form action="https://formspree.io/arnelli.tt@gmail.com" method="POST" enctype="multipart/form-data">
+     <div>
+     <label for="name">Your full name</label>
+     <input type="text" name="name-client" id="name" placeholder="Anton Ivanov" required><br>
+     </div>
+     <div>
+     <label for="email">Your E-mail</label>
+     <input type="email" name="email-client" id="email" placeholder="aIvanov@ukr.net" required><br>
+     </div>
+     <div>
+     <span>Sex: </span>
+     <label>
+     <input type="radio" name="gendre" value="male" checked>
+     Man</label>
+     <label>
+     <input type="radio" name="gendre" value="female">
+     Woman</label>
+     </div>
+     <div>
+         <label for="age">Your Age: </label>
+         <input type="number" id="age" min="20" max="99" placeholder="27">
+     </div>
+     <div>
+         <label>
+             <span>Your Country: </span>
+             <select name="country">
+                 <option value="russia">Russia</option>
+                 <option value="ukraine">Ukraine</option>
+                 <option value="poland">Poland</option>
+                 <option value="england">England</option>
+                 <option value="usa">USA</option>
+                 <option value="hungary">Hungary</option>
+                 <option value="china">China</option>
+                 <option value="canada">Canada</option>
+                 <option value="romania">Romania</option>
+                 <option value="spain">Spain</option>
+                 <option value="italy">Italy</option>
+                 <option value="france">France</option>
+                 <option value="germany" selected>Germany</option>
+             </select>
+         </label>
+     </div>
+     <div>
+         <label>
+             <span>Type web site: </span>
+            <select name="site" size="5" multiple required>
+                <option value="card">Site-Card</option>
+                <option value="forum">Forum</option>
+                <option value="landing">Landing</option>
+                <option value="e-shop" selected>E-shop</option>
+                <option value="blog">Blog</option>
+            </select> 
+         </label>
+     </div>
+     <div>
+         <label for="file">Attach your sketch: </label>
+         <input type="file" id="file" name="file">
+     </div>
+     <div>
+        <label><span>Additional possibilities: </span>
+        <input type="checkbox" name="possibilities" value="hosting" checked>
+        <span>Hosting</span>
+        <input type="checkbox" name="possibilities" value="adaptive">
+        <span>Adaptive</span>
+        <input type="checkbox" name="possibilities" value="support">
+        <span>Support</span>
+        <input type="checkbox" name="possibilities" value="admin">
+        <span>Setting admin panel</span>
+        </label> 
+     </div>
+     <div>
+     <span>How do you prefer to communicate with us: </span>
+     <label for="skype">Skype</label>
+     <input type="checkbox" id="skype" name="communicate" value="skype">
+     <label for="phone">Phone</label>
+     <input type="checkbox" id="phone" name="communicate" value="phone">
+     <label for="post">E-mail</label>
+     <input type="checkbox" name="post" id="post" value="email">
+     </div>
+     <div>
+     <label for="comment">Comment:</label>
+     <textarea name="comment" id="comment" cols="7" rows="10" maxlength="100" placeholder="Your comment"></textarea>
+     </div>
+     <div>
+         <input type="hidden" name="time_count">
+         <input type="hidden" name="subject" value="new-order">
+         <input type="text" name="_gotcha" style="display:none">
+         </div>
+         <div>
+             <input type="reset" value="Reset">
+             <input type="submit" name="submit" value="Send">
+             </div>
+     </div>
+ </form>
+ </div>
+</body>
+</html>
